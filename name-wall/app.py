@@ -1,5 +1,4 @@
 from flask import Flask, redirect, url_for, render_template, request, flash
-from flask_sqlalchemy import SQLAlchemy
 import psycopg
 from models import db, Name
 
