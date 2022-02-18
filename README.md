@@ -1,7 +1,7 @@
 # tech-task
 
 ## Description
-An application to satisfy the criteria describe in the RecodPoint Tech Task.
+An application to satisfy the criteria describe in the Tech Task.
 
 ## Requirements
 High-level: Using automation we want to spin up an environment which will allow us to connect to a web server on port 80 or 8080 and serve a bit of simple HTML content from a data storage source. You will be required to write a small application in the language/framework of your choice to connect to the database, query it, and return the result to the user. 
