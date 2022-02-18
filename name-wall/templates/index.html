@@ -13,12 +13,9 @@
         <p><input type="text" name="nm" placeholder="Your Name" value="{{nm if nm}}" /></p>
         <p><input type="submit" value="submit" /></p>
     </form>
-
-    {% with names = get_names() %}
-        {% if names %}
-            {% for item in names %}
-                <p>{{item.name}}</p>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
+    {% if values %}
+        {% for item in values %}
+            <p>{{item}}</p>
+        {% endfor %}
+    {% endif %}
 {% endblock %}
