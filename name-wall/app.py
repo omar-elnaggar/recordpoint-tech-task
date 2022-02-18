@@ -1,11 +1,11 @@
 from flask import Flask, redirect, url_for, render_template, request, flash
-import psycopg
+import psycopg2
 from models import db, Name
 
 
 app = Flask(__name__)
 app.secret_key = "something_secret"
-app.config['SQLALCHEMY_DATABASE_URI'] =  'postgresql://postgres@postgres/names'
+app.config['SQLALCHEMY_DATABASE_URI'] =  'postgresql://postgres:postgres@postgres/names'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
