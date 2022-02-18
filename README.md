@@ -1,4 +1,4 @@
-# recordpoint-tech-task
+# tech-task
 
 ## Description
 An application to satisfy the criteria describe in the RecodPoint Tech Task.
