@@ -23,6 +23,15 @@ services:
       retries: 2
     depends_on:
       - postgres
+  nginx: 
+    image: nginx:stable
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 8080:80
+    depends_on:
+      - postgres
+      - name-wall
 
 volumes:
   postgresdata:
